@@ -84,8 +84,8 @@ class DefaultController extends Controller
                     ->setBcc('david.gerard@ed-creatives.fr')
                     ->setCharset('utf-8')
                     ->setContentType('text/html')
-                    ->setBody('Message de '.$nom.'<br>'
-                        .$contenu.'<br>Tél: '.$telephone.'<br>e-mail : '.$email);
+                    ->setBody('Message de '.$nom.' : <br>'
+                        .$contenu.'<br><br>Tél: '.$telephone.'<br>e-mail : '.$email);
 
 
                 //->setBody($this->renderView('GitesBundle:Default:emails/validationCommande.html.twig',array('utilisateur'=>$commande->getUtilisateur())));
