@@ -1,0 +1,309 @@
+/*
+
+	Page style
+
+*/
+
+
+
+
+
+#container {
+
+	width:600px;
+
+	height:200px;
+
+	padding:0px;
+
+	margin:0 auto;
+
+	position:relative;
+
+	z-index:0;
+
+	
+
+}
+
+
+
+/*
+
+	Slideshow
+
+*/
+
+
+
+#slides {
+
+	position:absolute;
+
+	top:1px;
+
+	left:0px;
+
+	z-index:100;
+
+}
+
+
+
+/*
+
+	Slides container
+
+	Important:
+
+	Set the width of your slides container
+
+	Set to display none, prevents content flash
+
+*/
+
+
+
+.slides_container {
+
+	width:600px;
+
+	height:234px;
+
+	overflow:hidden;
+
+	position:relative;
+
+	display:none;
+
+
+}
+
+
+
+/*
+
+	Each slide
+
+	Important:
+
+	Set the width of your slides
+
+	If height not specified height will be set by the slide content
+
+	Set to display block
+
+
+
+*/
+
+.slides_container li {
+
+	width:600px;
+
+	height:213px;
+
+	display:block;
+
+}
+
+
+
+.slides_container li img {
+
+	display:block;
+
+	border:none;
+
+}
+
+
+
+.slides_container div {
+
+	width:570px;
+
+	height:208px;
+
+	display:block;
+
+	padding-top:0px;
+
+}
+
+
+
+.slides_container div img {
+
+	display:block;
+
+	border:none;
+
+}
+
+
+
+/*
+
+	Next/prev buttons
+
+*/
+
+
+
+#slides .next,#slides .prev {
+
+	position:absolute;
+
+	top:203px;
+
+	left:-25px;
+
+	width:24px;
+
+	height:43px;
+
+	display:block;
+
+	z-index:101;
+
+
+
+}
+
+#slides .prev img,#slides .next img{
+
+		border:none;
+
+}
+
+#slides .next {
+
+	left:0px;
+
+}
+
+
+
+/*
+
+	Pagination
+
+*/
+
+
+
+.pagination {
+
+	margin:26px auto 0;
+
+
+
+	
+
+	
+
+	width:100px;
+
+	display:none;/* Ã  retirer pour revoir les petits ronds de nav*/
+
+}
+
+
+
+#slides .pagination {
+
+	
+
+display:block;
+
+margin:-34px auto 0;
+
+position: relative;
+
+z-index:1000;
+
+width:400px;
+
+margin-left:0px;
+
+}
+
+
+
+#slides .pagination li {
+
+	
+
+margin-left:16px;
+
+}
+
+/*Ã  activer pour pagination fille*/
+
+/*#slidefille .pagination{
+
+	display:block;
+
+	margin-left:220px;
+
+	margin-top:-225px;
+
+	margin-bottom:250px;
+
+	position:relative;
+
+	z-index:1000;
+
+	float:left;
+
+	}
+
+	*/
+
+.pagination li {
+
+	float:left;
+
+	margin:0px 1px;
+
+	list-style:none;
+
+}
+
+
+
+.pagination li a {
+
+	display:block;
+
+	width:110px;
+
+	height:0;
+
+	padding-top:12px;
+
+	background-image:url(../images2/invisible.png);  
+
+	background-position:0 0; 
+
+	float:left;
+
+	overflow:hidden;
+
+	
+
+	/* ajout dav  ie8 probleme texte qui se voit*/
+
+	text-indent:-1000px;
+
+}
+
+
+
+.pagination li.current a {
+
+	background-position:0 -12px;
+
+}
+

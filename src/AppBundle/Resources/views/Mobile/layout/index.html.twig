@@ -1,0 +1,33 @@
+{% extends '::baseMobile.html.twig' %}
+
+{% block body %}
+    <span class="txtInfoIndex"><img src="{{ asset('images/mobile/entete_mobile_2014.gif') }}" alt="" width="320" height="130"  style="margin-left:-5px;"/></span>
+    <a href="{{ path('mobile_initiation') }}" class="titre">
+        <div class="articleEncadre">Initiation JETSKI<span class="titrebleu"><br />
+    sans permis</span></div></a>
+    <a href="{{ path('mobile_randonnees') }}" class="titre">
+        <div class="articleEncadre">Randonnées JETSKI<span class="titrebleu"><br />
+  avec &amp; sans permis</span></div></a>
+
+    <!--
+    <a href="mobile-jetski-66-location.asp" class="titre">
+    <div class="articleEncadre">Location JETSKI<span class="titrebleu"><br />
+      avec permis</span></div></a>-->
+
+    <a href="{{ path('mobile_flyboard') }}" class="titre">
+        <div class="articleEncadre">FlyBoard</div></a>
+
+    <a href="{{ path('mobile_flyfish') }}" class="titre">
+        <div class="articleEncadre">eNGINS TRACTéES</div></a>
+
+
+    <a href="{{ path('mobile_tarifs') }}" target="_blank" class="titrebleu">
+        <div class="articleEncadre">Tarifs</div></a>
+    <a href="{{ path('mobile_contact') }}" class="titrebleu">
+        <div class="articleEncadre">Contact / réservation</div></a>
+
+    <a href="jetsski-gallerie-photo-iphone.asp" class="titrebleu">
+        <div class="articleEncadre">Photos</div></a>
+{% endblock %}
+
+

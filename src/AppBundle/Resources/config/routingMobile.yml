@@ -1,0 +1,33 @@
+mobile_home:
+    path:  /
+    defaults: { _controller: AppBundle:Mobile:index }
+
+mobile_initiation:
+    path:  /jetski-66-initiation
+    defaults: { _controller: AppBundle:Mobile:initiation }
+
+mobile_location:
+    path:  /jetski-66-location
+    defaults: { _controller: AppBundle:Mobile:location }
+
+mobile_randonnees:
+    path:  /jetski-66-randonnees
+    defaults: { _controller: AppBundle:Mobile:randonnees }
+
+mobile_flyboard:
+    path:  /jetski-66-flyboard
+    defaults: { _controller: AppBundle:Mobile:flyboard }
+
+mobile_flyfish:
+    path:  /jetski-66-initiation
+    defaults: { _controller: AppBundle:Mobile:flyfish }
+
+mobile_contact:
+    path:  /jetski-reservations-et-renseignements
+    defaults: { _controller: AppBundle:Mobile:contact }
+
+mobile_tarifs:
+    path:  /jetski-66-tarifs
+    defaults: { _controller: AppBundle:Mobile:tarifs }
+
+

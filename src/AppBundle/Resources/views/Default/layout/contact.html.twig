@@ -1,0 +1,68 @@
+{% extends '::base.html.twig' %}
+{% form_theme formContact 'bootstrap_3_layout.html.twig' %}
+{% block body %}
+    <!--include tarif -->
+    <div id="corps">
+
+
+        {% for flashMessage in app.session.flashbag.get('emailenvoye') %}
+
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-8">
+                        <div class="alert alert-success">
+
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            {{ flashMessage|raw }}
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-3"></div>
+
+                </div>
+
+        {% endfor %}
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="titre" style="padding-left:30px;"> Contactez-<span class="titrebleu">nous !</span>
+                <hr></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                {{ form(formContact) }}
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <br/>
+                <span class="titrepetit" style="line-height:20px;">Infoline </span><br/>
+
+                <span class="titrebleugrand">06 34 87 50 49</span><br/>
+                <br/>
+                                    <span class="titrepetit"
+                                          style="line-height:20px;">Adresse de la base nautique</span><br/>
+
+
+                <span class="article" style='margin-left:-10px;'><strong>Jet Sensation</strong><br/>
+                avant port - port de Canet<br/>
+              66230 Canet en Roussillon<br/>
+               </span>
+                <span class="titrepetit" style="padding:0px;margin:0px; margin-left:-10px;">Adresse courrier</span>
+              <span class="article"><br/>Jet Sensation<BR/> 13 all&eacute;e du levant<br/>
+                66140 canet</span><br/>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+
+
+
+        <br><br><br>
+
+    </div>
+{% endblock %}
+
+

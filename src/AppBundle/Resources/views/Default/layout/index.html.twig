@@ -1,0 +1,378 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+    <div id="corps">
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="3" align="center">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="center">
+                                <div class="article" style="padding-top:20px;">
+                                    <table width="1160" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td width="280" align="left" valign="top">
+
+                                                <img id="imgtarif" src="{{ asset('images/jetski-66-2.jpg') }}"
+                                                     alt="Jet ski canet en roussillon, location jetski 66 roussillon"
+                                                     width="230" height="175"
+                                                     style="-moz-border-radius: 6px;border-radius: 6px;border: 5px #C9DCFC solid;margin-left:0px;margin-right:0px;"/>
+                                            </td>
+
+                                            <td align="center" valign="top">
+
+
+                                                <iframe style='width:624px;height:190px; border:none;'
+                                                        src="http://www.faire-part-creatif.com/isatest/index.asp"></iframe>
+
+
+                                            </td>
+
+                                            <td width="280" align="right" valign="top">
+
+
+                                                <div class="article"><a href="http://www.facebook.com/Jetski66"
+                                                                        target="_blank"
+                                                                        title='info jetski jetsensation 66'><img
+                                                                src="{{ asset('images/jet-ski-66-facebook.jpg') }}"
+                                                                alt="jet ski 66 facebook" width="231" height="70"
+                                                                style="-moz-border-radius: 6px;border-radius: 6px;border: 5px #C9DCFC solid;"/></a>
+                                                </div>
+
+
+                                                <div class="articleEncadre"
+                                                     style="width:230px;height:106px; margin-right:10px; border-color:#d21d7f; border-width:4px;padding-bottom:2px;padding-top:0px;">
+
+                                                    <span class="titrepetit"
+                                                          style="line-height:28px;">Infoline </span><span
+                                                            class="titregrand">06 34 87 50 49</span><br/>
+
+                                                    <span class="titrebleu" style="line-height:32px;">Renseignements &amp; devis</span><br/>
+
+
+                                                    <a href="contact.asp?m=r&width=740&height=600" rel="sexylightbox">
+
+                                                        <img src="{{ asset('images/reserver.gif')}}" width="180" height="32"
+                                                             style="border:none;margin-left:26px; margin-top:-1px;"/>
+                                                    </a></div>
+                                            </td>
+
+                                        </tr>
+
+                                    </table>
+
+                                </div>
+
+
+                                <div id="tarif" class="articleEncadre" style="margin-left:16px;margin-right:18px;">
+
+
+                                    <!--#include file="tarifs.html" -->
+                                    {% include "AppBundle:Default:layout/tarifs.html.twig" %}
+                                </div>
+                            </td>
+
+                        </tr>
+
+                    </table>
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="3" align="center">
+
+
+                    <div style="display:none">
+
+                        <span class="titregrand" style="text-decoration:blink;">    Prix de lancement tr&egrave;s attractifs, &agrave;
+                            partir de 30&euro; ! *</span><br/>
+
+                        <span class="titrebleugrand">Venez en profiter !!</span></div>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="3">
+
+
+                    <!-- Slide de l'accueil sur les 3 thèmes
+
+                    /!\
+
+                    ne pas retirer le a href #fragment car il sert pour les transitions, personnaliser le deuxième a href pour ton lien de la page
+
+                    /!\
+
+                    -->
+
+                    <div id="featured"
+                         style="-moz-border-radius: 6px;	border-radius: 6px;	border: 5px #C9DCFC solid;">
+
+                        <ul class="ui-tabs-nav">
+
+                            <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1">
+
+
+                                <img src="{{ asset('images/2.png') }}"/><a href="#fragment-1" style="display:none">
+
+
+                                    <a href="jetski-flyboard-66.asp">
+
+                                        <span>FlyBoard</span><br/>
+                                        Vous rêvez de voler ou de nager comme un dauphin,
+                                        Venez essayer la toute dernière nouveauté nautique ! [en savoir plus]</a></a>
+
+
+                            </li>
+
+                            <li class="ui-tabs-nav-item" id="nav-fragment-2"><img src="{{ asset('images/1.png') }}"/><a
+                                        href="#fragment-2" style="display:none"><a href="jetski-66-location.asp">
+
+                                        <span>Locations</span><br/>
+
+                                        vous poss&eacute;dez le permis mer ? Vivez des moments inoubliables en toute
+                                        libert&eacute; dans un cadre hors du commun ! [en savoir plus]</a></a></li>
+
+                            <li class="ui-tabs-nav-item" id="nav-fragment-3"><img src="{{ asset('images/3.png') }}"/><a
+                                        href="#fragment-3" style="display:none"><a
+                                            href="jetski-randonnees-mediterrannee.asp">
+
+                                        <span>Randonn&eacute;es</span><br/>
+
+                                        Nous vous accompagnons &agrave; la d&eacute;couverte des plus beaux coins de la
+                                        c&ocirc;te catalane.
+
+                                        Pilotez sans le permis mer ! [en savoir plus]
+
+                                    </a></a></li>
+
+                            <li class="ui-tabs-nav-item" id="nav-fragment-4"><img src="{{ asset('images/1.png') }}"/><a
+                                        href="#fragment-4" style="display:none">
+
+
+                                    <a href="jetski-initiations-bapteme.asp"><span>Initiations</span><br/>
+
+
+                                        Formule initiations pour vos enfants de 5 &agrave; 15 ans et la d&eacute;couverte
+                                        du jet ski au large pour les grands
+
+                                        [En savoir plus]
+
+
+                                    </a></a>
+
+
+                            </li>
+
+                            <li class="ui-tabs-nav-item" id="nav-fragment-5"><img src="{{ asset('images/1.png')}}"/>
+
+                                <a href="#fragment-4" style="display:none">
+
+
+                                    <a href="bouees-tractees-66.asp"><span>Engins tract&eacute;s</span><br/>
+
+
+                                        Sensations fortes, fous rires et décollage garantis !
+                                        [en savoir plus]
+
+
+                                    </a></a>
+
+
+                            </li>
+
+                        </ul>
+
+
+                        <!-- 1er : l'image -->
+
+                        <div id="fragment-1" class="ui-tabs-panel" style="margin-top:-10px;margin-left:-10px;">
+
+                            <!--<a href="jetski-flyboard-66.asp">-->
+
+                            <!-- <object width="720" height="360"><param name="movie" value="http://www.youtube.com/v/1T1xNWpOgI4?color1=0xFFFFFF&color2=0xFFFFFF&version=3&amp;hl=fr_FR"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+                             <param theme="light" /></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/1T1xNWpOgI4?color1=0x00FF00&color2=0xFFA500&version=3&amp;hl=fr_FR" type="application/x-shockwave-flash" width="720" height="360" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" theme="light"></embed></object>
+                            -->
+
+
+                            <iframe width="734" height="457"
+                                    src="//www.youtube.com/embed/1T1xNWpOgI4?version=3&feature=player_detailpage&theme=light"
+                                    frameborder="0" allowfullscreen></iframe>
+                            <!--<img src="images/flyboard-66.jpg" title="flyboard" alt="flyboard 66" />
+                           </a>
+                           -->
+                        </div>
+
+
+                        <!-- 2ème : l'image -->
+
+                        <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">
+
+                            <a href="jetski-66-location.asp"><img src="{{ asset('images/initiation.jpg')}}" title="Inititions"
+                                                                  alt="Initiations"/></a></div>
+
+
+                        <!-- 3ème :  l'image -->
+
+                        <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">
+
+
+                            <a href="jetski-randonnees-mediterrannee.asp"><img src="{{ asset('images/randonnee.jpg')}}"
+                                                                               title="Randonnees" alt="Randonnees"/></a>
+                        </div>
+
+                        <!-- 4ème : l'image -->
+
+                        <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">
+
+
+                            <a href="jetski-initiations-bapteme.asp">
+
+                                <img src="{{ asset('images/jetsensation.jpg')}}" title="Jet Sensation" alt="Jet Sensation"
+                                     border="0"/></a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- FIN DU SLIDE -->    </td>
+
+            </tr>
+
+            <tr>
+                <td height="206" colspan="2" align="center" valign="top" style="padding-left:10px;padding-right:10px; ">
+                    <a href="jetski-partenaires-66.asp"><img src="{{ asset('images/packmulti.jpg')}}" width="1160" height="190"
+                                                             class="imgencadre3"/></a></td>
+            </tr>
+            <tr style="background-color:#FFF">
+
+                <td width="800" valign="top" style="padding-left:10px;padding-right:10px; ">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <div class="article" style="height:272px;border-right:2px dotted #ccc;"><span
+                                            class="titre">Jet Sensation et son &eacute;quipe...</span><br/>
+                                    D&eacute;couvrez le <strong>jet ski &agrave; Canet plage </strong>pendant vos
+                                    vacances <br/>
+                                    &agrave; la base de location JET SENSATION.<br/>
+                                    Sans permis d&egrave;s l&rsquo;&acirc;ge de 16 ans&nbsp;!
+
+                                    En famille, en amoureux ou entre amis, <br/>
+                                    JET SENSATION&nbsp;vous propose de<strong> partager des moments
+                                        inoubliables</strong><br/>
+                                    avec cette activit&eacute; accessible &agrave; tous et qui respecte l&rsquo;environnement.
+                                    <br/>
+                                    <br/>
+                                    Vous aurez la possibilit&eacute; de piloter vous-m&ecirc;me votre propre jet ski
+                                    <br/>
+                                    que vous soyez titulaire ou pas du permis mer, accompagn&eacute; d&rsquo;un moniteur
+                                    VNM<br/>
+                                    dipl&ocirc;m&eacute; et exp&eacute;riment&eacute;. <br/>
+                                    <br/>
+                                    <strong>La d&eacute;couverte de la c&ocirc;te catalane</strong> au guidon de votre
+                                    jet ski <br/>
+                                    vous apportera une vision diff&eacute;rente&nbsp;et vous serez plus proche de la
+                                    faune <br/>
+                                    et de la flore marine. <br/>
+                                    <br/>
+                                    Plusieurs formules vous seront propos&eacute;es, initiations, bapt&ecirc;mes, <br/>
+                                    location et randonn&eacute;es pour votre plus grand plaisir&nbsp;!!
+                                </div>
+                            </td>
+                            <td width="170" align="left" valign="top">
+
+
+                                <div id="cont_091ac56ccf5ac1167bb3253ac8d72cc8">
+                                    <span id="h_091ac56ccf5ac1167bb3253ac8d72cc8"><a
+                                                id="a_091ac56ccf5ac1167bb3253ac8d72cc8"
+                                                href="http://www.tameteo.com/meteo_Canet+en+Roussillon-Europe-France-Pyrenees+Orientales--1-24968.html"
+                                                target="_blank" style="color:#808080;font-size:14px;">Meteo
+                                            Canet-en-Roussillon</a></span>
+                                    <script type="text/javascript"
+                                            src="http://www.tameteo.com/wid_loader/091ac56ccf5ac1167bb3253ac8d72cc8"></script>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+
+                <td valign="top" style="padding-right:0px;">
+
+
+                    <div class="articleEncadre" style="margin-right:6px;"><span class="titre">Nous Situer :</span> Base
+                        de Canet en Roussillon<br/>
+
+                        <iframe width="300" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                src="http://maps.google.fr/maps?oe=utf-8&amp;client=firefox-a&amp;ie=UTF8&amp;q=jet+sensation+canet&amp;fb=1&amp;gl=fr&amp;hq=jet+sensation+canet&amp;hnear=Perpignan&amp;cid=0,0,6686467696155590204&amp;t=h&amp;ll=42.702244,3.03802&amp;spn=0.003942,0.006416&amp;z=16&amp;output=embed"></iframe>
+                        <br/>
+                        <small>
+                            <a href="http://maps.google.fr/maps?oe=utf-8&amp;client=firefox-a&amp;ie=UTF8&amp;q=jet+sensation+canet&amp;fb=1&amp;gl=fr&amp;hq=jet+sensation+canet&amp;hnear=Perpignan&amp;cid=0,0,6686467696155590204&amp;t=h&amp;ll=42.702244,3.03802&amp;spn=0.003942,0.006416&amp;z=16&amp;source=embed"
+                               style="color:#0000FF;text-align:left">Agrandir le plan</a></small>
+                    </div>
+                </td>
+
+            </tr>
+
+
+            <tr style="background-color:#FFF">
+
+                <td colspan="3" align="left" style="border-left:1px solid #ccc;border-right:1px solid #ccc">* Bapt&ecirc;me<br/>
+                </td>
+
+            </tr>
+
+        </table>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('css/global.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style-slider.css') }}" />
+{% endblock %}
+{% block javascripts %}
+
+
+    <script src="{{  asset('js/slides.min.jquery.js') }}"></script>
+    <script>
+        $(function () {
+
+            $('#slides').slides({
+                preload: true,
+                preloadImage: 'images2/loading.gif',
+                play: 4500,
+                pause: 8000,
+                hoverPause: true,
+                effect: 'fade'
+            });
+
+            $("#imgtarif").click(function () {
+
+
+
+                if ($("#tarif:first").is(":hidden")) {
+
+                    $("#tarif").slideDown("slow");
+
+                } else {
+
+                    $("#tarif").hide();
+
+                }
+
+            });
+
+        });
+    </script>
+
+{% endblock %}
+
+

@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+#featured{
+	width:1156px;
+	padding-right:0px;
+	position:relative;
+	border:1px solid #ccc;
+	height:457px;
+	background:#ecf5fb;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+#featured ul.ui-tabs-nav{ 
+	position:absolute; 
+	top:0; left:736px; 
+	list-style:none; 
+	padding:0; margin:0; 
+	width:418px;
+	background-color:#fff;
+	
+	/*border-left:1px solid #dfdfdf;
+	background:url(images/bg-non-select.jpg) top left repeat-y; */
+}
+#featured ul.ui-tabs-nav li{ 
+	padding:0px 0; padding-left:0px;  
+	font-size:12px;
+	height:90px;
+	color:#666;
+	border-bottom:1px solid #FFFFFF 
+}
+#featured ul.ui-tabs-nav li img{ 
+	float:left; margin:15px 5px 0px 0px; 
+	/*background:#fff; */
+	padding:2px; 
+	/*border:1px solid #eee;*/
+	
+}
+#featured ul.ui-tabs-nav li span{ 
+	font-size:20px; font-family:'Neucha',Tahoma, Arial, Verdana; 
+	line-height:28px;
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#172983;
+	font-weight:bold;
+
+
+
+}
+
+
+#featured li.ui-tabs-nav-item a{ 
+	display:block; 
+	height:90px; 
+	color:#757575;   
+	line-height:18px;
+	font-size:12px;
+	text-decoration:none;
+		padding-top:10px;
+
+}
+#featured li.ui-tabs-nav-item a:hover{ 
+	/*background:#f2f2f2;*/ 
+}
+#featured li.ui-tabs-selected{ 
+	/*background:url(images/bg-select.jpg) top left repeat-y;*/
+	background-color:#ecf5fb
+}
+#featured ul.ui-tabs-nav li.ui-tabs-selected a{ 
+	/*background:none;*/
+}
+
+#featured .ui-tabs-panel{
+	width:756px;
+	height:380px;
+	position:relative;
+	padding:10px;
+}
+#featured .ui-tabs-panel .info{ 
+	position:absolute; 
+	top:0px; left:443px; 
+	height:286px;
+	width:155px; 
+	display:none;
+	/**background: url('images/transparent-bg.png'); *//
+	
+}
+#featured .info h2{ 
+	font-size:18px; font-family:Tahoma, Arial, Verdana; 
+	color:#b3a69c; padding:5px; margin:0;
+	padding-top:10px;
+	overflow:hidden;
+		padding-left:4px;
+	/*font-weight:normal; */
+}
+#featured .info h3{ 
+	font-size:12px; font-family:Tahoma, Arial, Verdana; 
+	color:#b9c01c; padding:10px 0px 12px 04px;; margin:0;
+	padding-top:10px;
+	overflow:hidden;
+	font-weight:normal;
+ 
+}
+#featured .info p{ 
+	margin:0 3px; 
+	font-family:Tahoma,Verdana; 
+	font-size:12px; 
+
+	color:#757575;
+}
+#featured .info a{ 
+	text-decoration:none; 
+	color:#b3a69c; 
+}
+#featured .info a:hover{ 
+	text-decoration:underline; 
+}
+#featured .ui-tabs-hide{ 
+	display:none; 
+}
+
+.ui-tabs-panel img{
+	width:756px;
+	height:320px;
+	margin-top:20px;
+	border:1px solid #dfdfdf;
+}

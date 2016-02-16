@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="jetsensation jet-ski 66 Canet à roussillon">
+    <meta name="author" content="david gerard">
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
+
+    <title>{% block title %}Jet sensation{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('/bootstrap335dist/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('/bootstrap335dist/css/bootstrap-theme.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css' />
+    <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/menu.css')}}" rel="stylesheet">
+<style>
+    body {background-image:url('{{ asset('images/fond2014.jpg') }}');}
+</style>
+    {% block stylesheets %}
+
+    {% endblock %}
+
+
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body >
+<i class="lientop" id="top"></i>
+{% for flashMessage in app.session.flashbag.get('success') %}
+    <div class="container-fluid" style="top:80px;left:10%;z-index:10000;position:absolute; width:40%;">
+        <div class="row">
+
+            <div class="alert alert-success">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                {{ flashMessage|raw }}
+            </div>
+
+        </div>
+    </div>
+{% endfor %}
+
+<div class="container">
+
+    <div class="row">
+       <img src="{{ asset('images/banniere2014.jpg') }}">
+    </div>
+
+    <div class="row">
+        <ul id="menuH2013" style="margin-top:5px;">
+
+            <li style="float:left">
+                <a href="{{ path('home') }}">
+                    <!--<img src="images/jetski-canet-accueil.png" width="13" height="22" alt="jetski canet accueil" style='margin-top:8px;' />-->
+                    ACCUEIL
+                </a>
+            </li>
+
+
+            <li style="float:left">
+
+                <a href="{{ path('initiation') }}" >JET SKI</a>
+
+                <ul class="menuderoulant">
+                    <li><a href="{{ path('initiation') }}">Initiations </a></li>
+                    <li><a href="{{ path('location')}}">Location</a></li>
+                    <li><a href="{{ path('randonnees')}}">Randonn&eacute;es</a></li>
+
+                </ul>
+
+            </li>
+            <li style="float:left">
+
+                <a href="{{ path('flyboard') }}"  title="faire du flyboard 66" >FLYBOARD</a>
+
+
+
+            </li>
+
+            <li style="float:left;">
+
+                <a href="{{ path('flyfish') }}" style="font-family:'Neucha'" >ENGINS TRACT&eacute;S</a>
+
+                <ul class="menuderoulant">
+                    <li><a href="{{ path('flyfish') }}">FlyFish</a></li>
+                    <li><a href="{{ path('flyfish') }}?#slydsit">Slydsit</a></li>
+
+                </ul>
+
+            </li>
+
+            <li style="float:left">
+
+                <a href="{{ path('tarifs') }}"   rel="sexylightbox">TARIFS</a>
+
+
+
+
+            </li>
+
+            <li style="float:left">
+
+                <a href="{{ path('photos') }}">PHOTOS</a>
+
+
+
+            </li>
+
+            <li style="float:left">
+
+                <a href="{{ path('contact') }}" >CONTACT</a>
+
+
+
+            </li>
+
+            <li style="float:left;">
+
+                <a href="https://www.tripadvisor.fr/Attraction_Review-g196601-d3291261-Reviews-Jet_Sensation-Canet_en_Roussillon_Pyrenees_Orientales_Languedoc_Roussillon.html"
+                   target="_blank">TripAdvisor</a>
+
+
+            </li>
+            <li style="float:left">
+
+                <a href="https://www.facebook.com/Jetski66"  target="_blank"  >Facebook</a>
+
+            </li>
+
+
+
+
+        </ul>
+    </div>
+
+    <div class="row">
+        {%  block body %}       {% endblock %}
+    </div>
+</div>
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="footer" >Jet Sensation 66 - Jet Ski &agrave;  Canet en Roussillon - Randonn&eacute;es et Location de Jet Ski
+
+
+
+        - Nos partenaires - <a style="text-decoration:none" href="mobile/index.asp" class="articlemobile_blanc"> version optimis&eacute;e Iphone /	Smartphone</a></div>
+
+</footer>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+
+<script src="{{ asset('bootstrap335dist/js/bootstrap.min.js') }}"></script>
+{% block javascripts %}{% endblock %}
+<script>
+    $(function () {
+
+    	// defilement arrete du tabs, necessite qjuery et ui ancien$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 6000, true);
+        $('#menuH2013 li').hover(function(){$(this).children('UL').show()},function(){$(this).children('UL').hide()} )
+
+    });
+
+
+</script>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="{{ asset('js/ie10-viewport-bug-workaround.js') }}></script> -->
+</body>
+</html>

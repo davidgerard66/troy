@@ -1,0 +1,43 @@
+home:
+    path: /
+    defaults: { _controller: AppBundle:Default:index }
+
+mobile:
+    resource: "@AppBundle/Resources/config/routingMobile.yml"
+    prefix:   /mobile
+
+initiation:
+    path:  /jetski-initiations-baptemes
+    defaults: { _controller: AppBundle:Default:initiation }
+
+location:
+    path:  /jetski-66-location
+    defaults: { _controller: AppBundle:Default:location }
+
+randonnees:
+    path:  /jetski-randonnees-mediterrannee
+    defaults: { _controller: AppBundle:Default:randonnees }
+
+flyboard:
+    path:  /jetski-flyboard-66
+    defaults: { _controller: AppBundle:Default:flyboard }
+
+flyfish:
+    path:  /bouees-tractees-66
+    defaults: { _controller: AppBundle:Default:flyfish }
+
+partenaires:
+    path:  /partenaires-jetski-66
+    defaults: { _controller: AppBundle:Default:partenaires }
+
+photos:
+    path:  /photos-jet-sensation
+    defaults: { _controller: AppBundle:Default:photos }
+
+tarifs:
+    path:  /jetski-66-tarifs
+    defaults: { _controller: AppBundle:Default:pageTarifs }
+
+contact:
+    path:  /jetski-reservation-66
+    defaults: { _controller: AppBundle:Default:contact }

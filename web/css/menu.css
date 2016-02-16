@@ -1,0 +1,118 @@
+/*--------début du menu de premier niveau--------*/
+
+#menuH2013                         /*-----pour le menu horizontal-------*/
+{
+	width:1200px;            /*-----donner une largeur au menu, prendre en compte les marges-------*/
+	height: auto;           /*-----important pour IE7, mettre une hauteur auto sinon pas de menu deroulant------*/
+	list-style-type: none;  /*-----pas de puce-----*/
+	margin: 0 auto;         /*-----marge auto pour centrer mon menu dans l'élément-------*/
+	padding: 0;             /*-----marge interne à 0 et bordure à 0 pour ne pas avoir de soucis avec les différents navigateurs-----*/
+	border: 0;     
+	margin-top:-3px; 
+	
+	}
+#menuH2013 > li                   /*------uniquement pour la liste de premier niveau-------*/
+{
+	text-transform:uppercase;
+	float: left;           /*------permet de mettre les items &lt;li&gt; horizontalement------*/
+	width: auto;          /*------je donne une largeur à mes cellules-------*/
+	margin: 4px;
+	margin-right:6px;           /*------j'espace mes cellules de 5px-------*/
+	padding: 0;
+	border: 0;
+	font-size:27px;
+	font-family:'Neucha', Arial;
+	border-right:0px solid #CCC;
+
+}
+#menuH2013 li a                   /*------pour les liens de premier niveau-------*/
+{
+	display: block;        /*------pour mettre mes liens en block------*/
+	color: #fff;         /*------donne une couleur à la police------*/
+  /*  background-color: #ffffff; */          /*------je donne un fond solide par sécurité pour les navigateurs qui ne reconnaissent pas la transparence-----*/
+/*	background-color: rgba(255, 255, 255, 0.5);*/     /*------fond transparent reconnus par les bons éléves-----*/
+	margin: 0;                                /*------mettre tout le monde d'accord--------*/
+	padding: 2px 6px;                         /*-----marge interne----*/
+	border:0px solid #FFFFFF;                 /*-----une bordure extérieur-------*/
+	text-decoration: none;                    /*-----pas de décoration pour mes liens-----*/
+	margin-right:9px;
+text-shadow: #888 1px 1px, #888 -1px 1px, #888 -1px -1px, #888 1px -1px;
+}
+
+
+#menuH2013 li a:hover {                         /*-------une couleur de fond au survol sur mes liens-------*/
+     /* background-color: rgb(255, 255, 255);
+      background-color: rgba(255, 255, 255, 0.5);
+	  */
+	 
+	 color:#162a83;
+	 text-shadow:none;
+
+}
+
+/*---------------fin du menu de premier niveau-------------*/
+
+/*---------------début du menu déroulant-------------------*/
+
+
+#menuH2013 .menuderoulant       /*----pour mon menu déroulant-------*/
+{
+	display: none;          /*------pour le faire disparaitre------*/
+	list-style-type: none;  /*-------pas de puce-------*/
+	margin: 0;    
+	margin-left:12px;          /*------pas de marge interne et externe ni bordure pour mettre tout le monde d'accord--------*/
+	padding: 0;
+	border: 0;
+	position:absolute;
+	z-index:2000;
+	border-bottom:0px solid #CCC
+}
+#menuH2013 .menuderoulant li         /*-------pour ma liste de deuxième niveau-------*/
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	width: 140px;   
+	height:38px;             /*----------je donne une largeur à mes cellules de sous menu----------*/
+    border-top: 0px solid #38B6FA;       /*-----des bordures transparentes pour espacer mes cellules-----*/
+	border-right: 1px solid transparent;
+	  background-color:rgb(56, 182, 250);
+	   background-color:rgba(56, 182, 250,0.8);
+	
+}
+#menuH2013 .menuderoulant li a         /*---------pour mes liens du menu deroulant---------*/
+{
+	display: block;
+	color: #fff;
+	margin: 0;
+	border: 0;
+	text-decoration: none;       
+  
+	
+	  
+	  
+    
+	 
+	  font-size:23px;
+	  height:24px; /* ajout */
+	  line-height:24px; /* ajout */
+
+}
+#menuH2013 .menuderoulant li a:hover       /*------pour le survol du sous menu-------*/
+{
+	/*background-color: rgb(244, 239, 231);
+      background-color: rgba(244, 239, 231, 1);*/
+	color:#162a83;
+
+}
+
+#menuH2013 .menuderoulant li a:visited {         /*---------pour permmetre au visiteur de savoir sur les liens qu'il a déjà visité--------*/
+      /*background-color:rgb(255, 255, 255);
+      background-color:rgba(255, 255, 255, 0.5);*/
+}
+
+
+
+/*#menuH2013 li:hover > .menuderoulant { display: block; }    /*------pour faire apparaitre notre sous menu au survol du menu de premier niveau------*/ 
+
+/*----------fin du menu déroulant----------------*/

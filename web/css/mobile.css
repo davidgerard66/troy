@@ -1,0 +1,39 @@
+body{
+	/*background-color:#FEF8E0;*/
+
+	background-color: #D11880;
+
+	margin:0;
+}
+a.tel  { color: white; font-size:20px;}
+a.tel:hover, a.tel:focus {color: black;}
+
+a img{
+border:none;
+}
+
+#container{
+	color:#fff;
+text-align:center;
+width:310px;
+margin:auto;
+}
+
+#nextBtn a{
+	margin-left:10px;
+	
+	color:#fff;
+	
+}
+#prevBtn a{
+	margin-left:10px;
+	color:#fff;
+	
+}
+
+#containerTitre{
+	height:77px;
+	background: url(images/entete.jpg) no-repeat center;
+	border-bottom: 4px solid #4c444d;
+}
+

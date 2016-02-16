@@ -1,0 +1,89 @@
+{% extends '::baseMobile.html.twig' %}
+
+{% block body %}
+    <a href="{{ path('mobile_home') }}" class="articlemobile_blanc" style=" font-family:Verdana, Geneva, sans-serif">
+
+        <img src="{{ asset('images/mobile/bouton_retour.jpg') }}" height="45" border="0" width="320">
+
+    </a>
+    <span class="txtInfoIndex"><img src="{{ asset('images/mobile/entete_mobile_2014.gif') }}" alt="" width="320" height="130"  /></span>
+
+    <table width="310" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" valign="top">
+
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="center">
+                            <div  class="articleEncadre" style='margin:6px;'>
+                                <span class="titregrand">Baptêmes </span><span class="titrebleugrand">JET ski</span>
+                            </div></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top"><span class="articlemobile_blanc" style="margin-right:4px;"><strong>Jet Sensation vous propose <br />
+                                    la formule baptêmes  <br />
+                                    pour vos enfants de 5 à 15 ans<br />
+                                    en toute sécurité <br />
+                                    d'une durée de 10 mn <br />
+                                    avec un moniteur agréé<br />
+                                    qui mettra à votre disposition <br />
+                                    toute son expérience.  <br />
+                                    <br />
+                                    La pratique du jet ski à Canet <br />
+                                    offre le plein de sensations<br />
+                                    à tout âge !! <br />
+                                    <br />
+                                    Pour en savoir plus, <a href="{{ path('mobile_contact') }}">contactez-nous<br />
+                                        <br />
+                                    </a></strong></span></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle"><img src="{{ asset('images/jetski-initiation.jpg') }}" width="300" /></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top"><div class="articlemobile_blanc" style="margin-right:4px;">
+                                <div  class="articleEncadre" style='margin:6px;'> <span class="titregrand">Initiation </span><span class="titrebleugrand">JET ski</span> </div>
+                                <br />
+          <span style="margin-left:8px;"><strong>Découverte du jet ski au large ! </strong><br />
+Avant toutes sorties, <br />
+vous assisterez à un briefing sur la sécurité<br />
+et une explication du mode d’emploi du jet ski<br />
+<br />
+(ce briefing se fera hors <br />
+de votre durée de location)<br />
+<br />
+<strong>En formule initiation</strong>, vous allez passer <br />
+un agréable moment de divertissement<br />
+sous la responsabilité<br />
+de nos moniteurs diplômés, <br />
+qui vous définiront<br />
+une zone de navigation en mer.<br />
+<br />
+<strong>Le permis mer n’est pas obligatoire</strong>,<br />
+vous pourrez évoluer librement<br />
+<strong>en toute sécurité </strong>,<br />
+vous piloterez vous-même <br />
+votre propre jet ski<strong> dès l’âge de 16 ans ! </strong><br />
+<br />
+Deux formules sont proposées : <br />
+<strong>20 ou 30 minutes </strong><br />
+<br />
+Pour en savoir plus, <a href="{{ path('mobile_contact') }}" >contactez-nous</a> </span></div></td>
+                    </tr>
+                </table>
+
+
+                    {% include "AppBundle:Mobile:layout/panneaudroit.html.twig" %}
+
+                <a href="{{ path('mobile_tarifs') }}" ><br />
+                    <img src="{{ asset('images/jetski-66-2.jpg') }}" alt="Jet ski canet en roussillon, location jetski 66 roussillon"  width="230" height="175"  class="imgencadre2"  style=""/><br />
+                    <br />
+                </a>
+
+
+            </td>
+        </tr>
+    </table>
+{% endblock %}
+
+
